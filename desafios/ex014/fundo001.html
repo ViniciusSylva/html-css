@@ -23,7 +23,7 @@
             color: white;
         }
 
-        th.fundo {
+        th.fundo, td.fundo  {
             background-color: rgb(51, 51, 51);
             color: white;
             text-align: left;
@@ -34,16 +34,16 @@
     <table>
         <thead>
             <tr>
-                <th class="grey">Área</th>
-                <th class="grey">Disciplinas</th>
-                <th class="grey">Nota 01</th>
-                <th class="grey">Nota 02</th>
-                <th class="grey">Média</th>
+                <th scope="col" class="grey">Área</th>
+                <th scope="colgroup" class="grey">Disciplinas</th>
+                <th scope="colgroup" class="grey">Nota 01</th>
+                <th scope="colgroup" class="grey">Nota 02</th>
+                <th scope="colgroupgroup" class="grey">Média</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th class="negrito" rowspan="4">Exatas</th>
+                <th scope="rowgroup" class="negrito" rowspan="4">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -68,10 +68,11 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th class="fundo" colspan="5">Média de exatas</th>
+                <th scope="row" class="fundo" colspan="4">Média de exatas</th>
+                <td class="fundo">0.0</td>
             </tr>
             <tr>
-                <th class="negrito" rowspan="2">Humanas</th>
+                <th scope="colgroup" class="negrito" rowspan="2">Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -84,7 +85,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th class="fundo" colspan="5">Média de Humanas</th>
+                <th scope="row" class="fundo" colspan="4">Média de Humanas</th>
+                <td class="fundo">0.0</td>
             </tr>
         </tbody>
         <tfoot>
